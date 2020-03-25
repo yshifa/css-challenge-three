@@ -110,6 +110,7 @@
   font-weight: lighter;
   color: white;
   border-radius: 10px;
+  border-style: hidden;
 }
 
 @media (max-width: 940px) {
