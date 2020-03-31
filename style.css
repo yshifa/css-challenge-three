@@ -112,8 +112,8 @@
 
 .container3 h5 button {
   background-color: hsl(0, 100%, 68%);
-  padding: 10px;
-  font-weight: lighter;
+  padding: 8px;
+  font-weight: bold;
   color: white;
   border-radius: 10px;
   border-style: hidden;
