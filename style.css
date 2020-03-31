@@ -3,18 +3,27 @@
   padding: 0px;
   box-sizing: border-box;
   text-decoration: none;
-}
-
-.body-content {
-  font-family: "Barlow", sans-serif;
-  margin: 0 auto;
-  width: 100%;
-  font-size: 18px;
+  list-style: none;
 }
 
 .container {
-  max-width: 1100px;
+  font-size: 18px;
+  font-family: "Barlow", sans-serif;
+  /* max-width: 1100px; */
+  width: 95%;
   margin: 0 auto;
+}
+
+.checkbtn {
+  color: black;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+#check {
+  display: none;
 }
 
 .container1 nav {
@@ -23,7 +32,7 @@
 
 .container1 nav label.logo {
   line-height: 70px;
-  padding: 20px 20px;
+  padding-top: 20px 20px;
 }
 
 .container1 nav ul {
@@ -42,8 +51,8 @@
   color: black;
   text-transform: uppercase;
   padding: 8px 16px;
-  font-weight: bold;
   font-size: 1.1rem;
+  font-weight: bold;
   border-radius: 3px;
 }
 
@@ -56,16 +65,10 @@
   color: grey;
 }
 
-.checkbtn {
-  color: black;
-  float: right;
-  line-height: 80px;
-  margin-right: 40px;
+.container1 nav ul li a.active:hover {
+  transition: 0.5s;
+  color: seagreen;
   cursor: pointer;
-}
-
-#check {
-  display: none;
 }
 
 .container2 {
@@ -76,6 +79,7 @@
 .container2 img {
   width: 350px;
   height: 210px;
+  object-fit: contain;
 }
 
 .container3 h3 {
@@ -123,7 +127,6 @@
   label.logo {
     padding-left: 20px;
   }
-
   ul {
     position: fixed;
     width: 70%;
@@ -135,95 +138,79 @@
     background: white;
     margin: 0 auto;
   }
-
   #check:checked ~ ul {
     left: 0;
   }
 }
 
 @media (min-width: 700px) {
-  .body-content {
+  .container {
     width: 80%;
   }
-
   .container2 img {
     width: 50vh;
     height: 30vh;
   }
-
   .container3 h3 {
     font-size: 1.2rem;
     margin: 8px;
     padding: 20px;
   }
-
   .container3 h2 {
     font-size: 1.5rem;
     margin: 8px;
     padding: 20px;
   }
-
   .container3 p {
     font-size: 1.6rem;
     margin: 8px;
     padding: 20px;
   }
-
   .container3 h5 {
     font-size: 1.2rem;
     margin: 8px;
   }
-
   .container3 h5 button {
     font-size: 1.2rem;
   }
-
   .container1 nav label.checkbtn {
     margin-right: 90px;
   }
 }
 
 @media (min-width: 1100px) {
-  .body-content {
+  .container {
     width: 95%;
     margin: 0 auto;
   }
-
   .container1 nav {
     width: 95%;
     height: 80px;
   }
-
   .container1 nav ul {
     margin-right: 10px;
     display: inline;
   }
-
   .container1 nav ul li {
     margin: 0 5px;
     float: left;
   }
-
   .container1 nav ul li.active {
     border-style: none;
     padding: 0px;
   }
-
   .container1 nav ul li a {
     font-size: 1.7rem;
     float: right;
   }
-
   .checkbtn {
     display: none;
   }
-
   .container2 {
     float: right;
     margin: 70px 5px 2px 5px;
     width: 40%;
   }
-
   .container2 img {
     width: 550px;
     height: 60vh;
@@ -231,7 +218,6 @@
     padding: 0px;
     object-fit: contain;
   }
-
   .container3 {
     float: left;
     margin-top: 70px;
