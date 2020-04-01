@@ -1,4 +1,4 @@
-/* * {
+* {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
@@ -9,9 +9,9 @@
 .container {
   font-size: 18px;
   font-family: "Barlow", sans-serif;
-  max-width: 1100px; */
-/* width: 95%; c*/
-/* margin: 0 auto;
+  max-width: 1100px;
+  width: 95%;
+  margin: 0 auto;
 }
 
 .checkbtn {
@@ -143,11 +143,11 @@
   }
 }
 
-@media (min-width: 700px) { */
-/* .container {
+@media (min-width: 700px) {
+  .container {
     width: 80%;
-  /* }  c
- /* .container2 img {
+  }
+  .container2 img {
     width: 50vh;
     height: 30vh;
   }
@@ -178,12 +178,12 @@
   }
 }
 
-@media (min-width: 1024px) { */
-/* c .container {
+@media (min-width: 1024px) {
+  .container {
     width: 95%;
     margin: 0 auto;
-  }  c*/
-/* .container1 nav {
+  }
+  .container1 nav {
     width: 95%;
     height: 80px;
   }
@@ -218,243 +218,6 @@
     padding: 0px;
     object-fit: contain;
   }
-  .container3 {
-    float: left;
-    margin-top: 70px;
-    margin: 70px 2px auto 2px;
-  }
-} */
-
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  text-decoration: none;
-}
-
-.body-content {
-  font-size: 16px;
-  margin: 0 auto;
-  font-family: "Barlow", sans-serif;
-  width: 100%;
-}
-
-.container1 nav {
-  display: inline;
-}
-
-.container1 nav label.logo {
-  line-height: 70px;
-  padding: 20px 20px;
-}
-
-.container1 nav ul {
-  float: right;
-  margin: auto 40px;
-}
-
-.container1 nav ul li {
-  display: block;
-  line-height: 50px;
-  margin: 0 8px;
-  cursor: pointer;
-}
-
-.container1 nav ul li a {
-  color: black;
-  text-transform: uppercase;
-  padding: 8px 16px;
-  font-weight: bold;
-  font-size: 1.1rem;
-  border-radius: 3px;
-}
-
-.container1 nav ul li.active {
-  border-top: 1px solid grey;
-  padding: 11px;
-}
-
-.container1 nav ul li a.active {
-  color: grey;
-}
-
-.checkbtn {
-  color: black;
-  float: right;
-  line-height: 80px;
-  margin-right: 40px;
-  cursor: pointer;
-}
-
-#check {
-  display: none;
-}
-
-.container2 {
-  padding: 10px;
-  margin: 20px 2px 30px 2px;
-}
-
-.container2 img {
-  width: 350px;
-  height: 210px;
-}
-
-.container3 h3 {
-  color: hsla(229, 11%, 40%, 0.76);
-  letter-spacing: 0.1pc;
-  font-weight: lighter;
-  font-size: 0.91rem;
-  padding: 10px;
-}
-
-.container3 h3 span {
-  background-color: black;
-  color: blanchedalmond;
-  border-radius: 35px;
-  padding: 3px 8px;
-}
-
-.container3 h2 {
-  padding: 10px;
-  font-weight: bold;
-  font-size: 1.5rem;
-}
-
-.container3 p {
-  padding: 10px;
-  color: hsla(230, 14%, 32%, 0.979);
-}
-
-.container3 h5 {
-  color: hsla(227, 17%, 43%, 0.87);
-  font-weight: lighter;
-  margin: 4px;
-  padding: 10px;
-}
-
-.container3 h5 button {
-  background-color: hsl(0, 100%, 68%);
-  padding: 8px;
-  font-weight: bold;
-  color: white;
-  border-radius: 10px;
-  border-style: hidden;
-}
-
-@media (max-width: 940px) {
-  label.logo {
-    padding-left: 20px;
-  }
-
-  ul {
-    position: fixed;
-    width: 70%;
-    height: 34vh;
-    top: 80px;
-    left: -100%;
-    text-align: center;
-    transform: all 0.5s;
-    background: white;
-    margin: 0 auto;
-  }
-
-  #check:checked ~ ul {
-    left: 0;
-  }
-}
-
-@media (min-width: 768px) {
-  .body-content {
-    width: 80%;
-  }
-
-  .container2 img {
-    width: 50vh;
-    height: 30vh;
-  }
-
-  .container3 h3 {
-    font-size: 1.2rem;
-    margin: 8px;
-    padding: 20px;
-  }
-
-  .container3 h2 {
-    font-weight: bold;
-    font-size: 1.5rem;
-    margin: 8px;
-    padding: 20px;
-  }
-
-  .container3 p {
-    font-size: 1.6rem;
-    margin: 8px;
-    padding: 20px;
-  }
-
-  .container3 h5 {
-    font-size: 1.2rem;
-    margin: 8px;
-  }
-
-  .container3 h5 button {
-    font-size: 1.2rem;
-  }
-
-  .container1 nav label.checkbtn {
-    margin-right: 90px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .body-content {
-    width: 95%;
-    margin: 0 auto;
-  }
-
-  .container1 nav {
-    width: 95%;
-    height: 80px;
-  }
-
-  .container1 nav ul {
-    margin-right: 10px;
-    display: inline;
-  }
-
-  .container1 nav ul li {
-    margin: 0 5px;
-    float: left;
-  }
-
-  .container1 nav ul li.active {
-    border-style: none;
-    padding: 0px;
-  }
-
-  .container1 nav ul li a {
-    font-size: 1.7rem;
-    float: right;
-  }
-
-  .checkbtn {
-    display: none;
-  }
-
-  .container2 {
-    float: right;
-    margin: 70px 5px 2px 5px;
-    width: 40%;
-  }
-
-  .container2 img {
-    width: 550px;
-    height: 60vh;
-    margin: 0px;
-    padding: 0px;
-  }
-
   .container3 {
     float: left;
     margin-top: 70px;
